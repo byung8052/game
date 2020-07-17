@@ -23,14 +23,14 @@ public class Add {
 			Scanner sc = new Scanner(System.in);
 			System.out.println(a+"+"+b);
 			System.out.println("정답?: ");
-			int d = sc.nextInt();
+			int d = sc.nextInt(); // 문자 입력 시 예외 처리
 			
 			if(c == d) {
 				System.out.println("정답");
-				clear ++;	
+				clear ++;	//맞은 횟수 +
 			} else {
 				System.out.println("오답");
-				fails ++;	
+				fails ++;	//틀린 횟수 +
 				}
 			}	
 			catch (Exception e) {
