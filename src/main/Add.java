@@ -13,7 +13,7 @@ public class Add {
 
 		System.out.println("총 10문제");
 		//i 값에 따라 다르게 입력
-		for(int i=0; i<10; i++) {
+		for(int i=0; i<10; i++) { //10번 반복
 			Random rnd = new Random();
 			int a = (rnd.nextInt(80)+10);
 			int b = (rnd.nextInt(80)+10);
