@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Div {
 	public void divnum() {
+		int tries = 0;
 		int clear = 0;
 		int fails = 0;
 
@@ -14,14 +15,14 @@ public class Div {
 			Random rnd = new Random();
 			int a = (rnd.nextInt(80)+10);
 			int b = (rnd.nextInt(80)+10);
-			int c = a/b;
+			double c = a/b;
 			
 		try{
 			Scanner sc = new Scanner(System.in);
 			System.out.println(a+"/"+b);
-			System.out.println("정답?: ");
+			System.out.println("정답?(소수점 제외 자연수만 입력): ");
 			int d = sc.nextInt();
-			
+			Math.round(d);
 			if(c == d) {
 				System.out.println("정답");
 				clear ++;	
@@ -34,7 +35,6 @@ public class Div {
 			System.out.println("오류,숫자를 입력");
 			}
 		}
-		System.out.println("맞은 횟수"+clear+"틀린 횟수"+fails);
-		
+		System.out.println("맞은 횟수 "+clear+" 틀린 횟수 "+fails+" 나머지는 잘못 입력 ");		
 	}
 }
