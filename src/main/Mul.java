@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Mul {
 	public void mulnum() {
-		int tries = 0;
 		int clear = 0;
 		int fails = 0;
 
