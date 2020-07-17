@@ -21,17 +21,41 @@ public class Mainclass {
 //		}
 		//더하기
 		Add aa = new Add();
-		aa.addnum();
 		//빼기
 		Sub ss = new Sub();
-		ss.subnum();
 		//곱하기
 		Mul dd = new Mul();
-		dd.mulnum();
 		//나누기
 		Div ff = new Div();
-		ff.divnum();
+		
+
+		for(;;) {
+		try {
+			System.out.println("1.더하기 2.빼기 3.곱하기 4.나누기 0.종료");
+			System.out.println("숫자 입력: ");
+			Scanner sc = new Scanner(System.in);
+			int a = sc.nextInt();
+		if (a == 1) {
+			aa.addnum();
+		}
+		else if (a == 2) {
+			ss.subnum();
+		}
+		else if (a == 3) {
+			dd.mulnum();
+		}
+		else if (a == 4) {
+			ff.divnum();
+		}
+		else if (a == 0) {
+			System.exit(0);
+			break;
+		}
+	} catch (Exception e) {
+		System.out.println("잘못 입력");
 	}
+}
+}
 	//1=더하기 2=빼기 3=곱하기 4=나누기 0=종료
 	//1-> 더하기 문제가 10문제 나오고
 	//정답수,틀린수 출력하고 다시 위 메뉴 출력(그 외 연산 동일)
