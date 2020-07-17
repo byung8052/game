@@ -14,13 +14,13 @@ public class Sub {
 			Random rnd = new Random();
 			int a = (rnd.nextInt(80)+10);
 			int b = (rnd.nextInt(80)+10);
-			int c = a-b;
+			double c = a-b; // -로 나올 수 있기 때문에 int가 아닌 double
 			
 		try{
 			Scanner sc = new Scanner(System.in);
 			System.out.println(a+"-"+b);
 			System.out.println("정답?: ");
-			int d = sc.nextInt();
+			double d = sc.nextInt(); // -로 나올 수 있기 때문에 int가 아닌 double
 			
 			if(c == d) {
 				System.out.println("정답");
